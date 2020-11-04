@@ -249,15 +249,16 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startingNum){
-  for (let i=0; i<startingNum; i+1){
-    let numLeft = startingNum - 1
+  for (let i=0; i<startingNum; i++){
+    let firstNum = startingNum - i;
+    let numLeft = firstNum - 1
 
-    return startingNum+" bottles of soda on the wall, "+startingNum+" bottles of soda, take one down pass it around "+numLeft+" bottles of soda on the wall"
+    return firstNum+" bottles of soda on the wall, "+firstNum+" bottles of soda, take one down pass it around "+numLeft+" bottles of soda on the wall"
 
-    startingNum = numLeft;}
+    }
 
   }
-console.log(annoyingSong(99))
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -306,11 +307,25 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
+// function vowelCounter(inputString) {
+//   let inputArray = inputString.split('')   // put letters into an array
+//   let vowelArray = [] // initialize array to put vowels into
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
-
+//   for (let i=0;i<inputArray.length;i++) {
+//     if (inputArray[i] === 'a'||inputArray[i] === 'e'||inputArray[i] === 'i'||inputArray[i] === 'o'||inputArray[i] === 'u'){ // cycle through vowels and add to vowel array 
+//       vowelArray.push(inputArray[i])
+//     } else if (inputArray[i] === " "){
+//       if (inputArray[i-1] === 'y'){
+//         vowelArray.push(inputArray[i-1]) // special condition for if a word ends in a 'y'
+//       }
+//     }
+//   }
+//  if (inputArray[inputArray.length-1] === 'y'){ // special condition for if the string ends in a 'y'
+//    vowelArray.push(inputArray.length-1)
+//  }
+// return vowelArray.length;
+// }
+// console.log(vowelCounter("tasty lick"))
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
